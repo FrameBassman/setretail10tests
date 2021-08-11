@@ -2,25 +2,26 @@ package ru.crystals.sco.setrobot.ncr;
 
 import com.codeborne.selenide.SelenideConfig;
 import com.codeborne.selenide.SelenideDriver;
+import com.codeborne.selenide.SelenideElement;
+import org.junit.Before;
 import org.junit.Test;
-
-import java.time.Duration;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
+import org.openqa.selenium.By;
 
 public class Sample {
-    @Test
-    public void e2eTest() throws Exception {
-//        Thread.sleep(Duration.ofSeconds(15).toMillis());
+    private SelenideDriver selenide;
+
+    @Before
+    public void setup() throws Exception {
         SelenideConfig selenideConfig = new SelenideConfig();
         selenideConfig.browser(DriverProvider.class.getName());
-        SelenideDriver selenide = new SelenideDriver(selenideConfig);
+        selenideConfig.browserSize(null);
+        selenide = new SelenideDriver(selenideConfig);
         selenide.open();
     }
 
     @Test
-    public void itWorks() throws Exception {
-        assertThat(1, equalTo(1));
+    public void e2eTest() throws Exception {
+        SelenideElement main = selenide.find(By.name("SCOTInputWindow"));
+        main.find(By.name("Shut Down SCOTAPP application")).click();
     }
 }
