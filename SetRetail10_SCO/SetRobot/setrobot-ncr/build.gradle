@@ -3,7 +3,8 @@ plugins {
 }
 
 dependencies {
-    implementation libs.junit
+    implementation libs.junit,
+            libs.selenide
     testImplementation libs.junit
 }
 
