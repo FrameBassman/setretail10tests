@@ -1,0 +1,6 @@
+ext.libs = new LinkedHashMap()
+ext.libs.putAll([
+        junit: [
+                'junit:junit:4.12'
+        ]
+])

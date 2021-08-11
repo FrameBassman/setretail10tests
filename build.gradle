@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    subproject ->
+        subproject.apply plugin: 'java'
+        subproject.repositories {
+            mavenCentral()
+        }
+}
+
+ext.BRANCH_ROOT_PATH = file(rootProject.projectDir.path).absolutePath
+
+dependencies {
+    project.apply(from: relativePath(BRANCH_ROOT_PATH + '/libs.gradle'))
+}

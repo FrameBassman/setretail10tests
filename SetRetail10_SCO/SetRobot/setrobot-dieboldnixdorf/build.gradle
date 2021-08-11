@@ -1,0 +1,12 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation libs.junit
+    testImplementation libs.junit
+}
+
+application {
+    mainClassName = 'ru.crystals.sco.setrobot.dieboldnixdorf.App'
+}
