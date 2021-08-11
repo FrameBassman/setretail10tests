@@ -3,12 +3,22 @@
  */
 package ru.crystals.sco.setrobot.ncr;
 
+import org.junit.internal.TextListener;
+import org.junit.runner.JUnitCore;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        App app = new App();
+        app.run();
+    }
+
+    public void run() {
+        JUnitCore junit = new JUnitCore();
+        junit.addListener(new TextListener(System.out));
+        junit.run(Sample.class);
     }
 }

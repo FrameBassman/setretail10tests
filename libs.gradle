@@ -7,8 +7,12 @@ ext.libs.putAll([
         selenide: [
                 'com.codeborne:selenide:5.23.2'
         ],
+        logs: [
+                'org.slf4j:slf4j-api:2.0.0-alpha1',
+                'org.slf4j:slf4j-log4j12:2.0.0-alpha1',
+                'log4j:log4j:1.2.17'
+        ],
         desktopDrivers: [
                 'com.jaliansystems:marathon-java-driver:5.4.0.0',
-
         ]
 ])

@@ -15,8 +15,10 @@ public class DriverProvider implements WebDriverProvider {
     public WebDriver createDriver(@Nonnull DesiredCapabilities cap) {
 //        cap.setCapability("app","<path to executable file>"); //если хотим сразу запускать какую-либо программу
         cap.setCapability("launchDelay","5"); //задержка после запуска программы
+        cap.setCapability("app", "C:/windows/system32/calc.exe");
         try {
             return new RemoteWebDriver(new URL("http://172.29.17.8:9999"), cap);
+//            return new RemoteWebDriver(new URL("http://localhost:9999"), cap);
         } catch (MalformedURLException e) {
             throw new RuntimeException("Error in URL");
         }
