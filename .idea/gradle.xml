@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="/opt/gradle/5.6.4" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/Application" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/SetRobot" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/SetRobot/setrobot-core" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/SetRobot/setrobot-dieboldnixdorf" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/SetRobot/setrobot-itab" />
+            <option value="$PROJECT_DIR$/SetRetail10_SCO/SetRobot/setrobot-ncr" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
