@@ -18,3 +18,5 @@ include  'SetRetail10_SCO:SetRobot:setrobot-ncr'
 project(':SetRetail10_SCO:SetRobot:setrobot-ncr').projectDir = file("SetRetail10_SCO/SetRobot/setrobot-ncr")
 include  'SetRetail10_SCO:SetRobot:setrobot-dieboldnixdorf'
 project(':SetRetail10_SCO:SetRobot:setrobot-dieboldnixdorf').projectDir = file("SetRetail10_SCO/SetRobot/setrobot-dieboldnixdorf")
+include  'SetRetail10_SCO:SetRobot:setrobot-local'
+project(':SetRetail10_SCO:SetRobot:setrobot-local').projectDir = file("SetRetail10_SCO/SetRobot/setrobot-local")
