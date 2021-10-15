@@ -4,3 +4,6 @@ out
 
 gradlew*
 gradle/wrapper
+
+
+**/logs
