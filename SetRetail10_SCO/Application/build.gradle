@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    implementation libs.junit,
+            libs.logs
+    testImplementation libs.junit
+}
+
+
+application {
+    // Define the main class for the application
+    mainClassName = 'tech.romashov.application.App'
+}

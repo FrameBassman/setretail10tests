@@ -8,6 +8,8 @@
  */
 
 rootProject.name = 'setretail10tests'
+include 'SetRetail10_SCO:Application'
+project(':SetRetail10_SCO:Application').projectDir = file('SetRetail10_SCO/Application')
 include  'SetRetail10_SCO:SetRobot:setrobot-core'
 project(':SetRetail10_SCO:SetRobot:setrobot-core').projectDir = file("SetRetail10_SCO/SetRobot/setrobot-core")
 include  'SetRetail10_SCO:SetRobot:setrobot-itab'
