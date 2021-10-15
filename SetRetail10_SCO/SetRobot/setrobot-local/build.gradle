@@ -4,7 +4,11 @@ plugins {
 }
 
 dependencies {
-    implementation libs.junit
+    implementation libs.junit,
+            libs.selenide,
+            libs.logs,
+            libs.desktopDrivers,
+            project(':SetRetail10_SCO:SetRobot:setrobot-core')
     testImplementation libs.junit
 }
 
